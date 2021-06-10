@@ -1,0 +1,13 @@
+FROM gcr.io/knative-releases/knative.dev/net-istio/cmd/controller@sha256:bd4e782c036aadf0208bc76e83da5834f735339bb23ed186e695396c3c07d9fb
+
+FROM gcr.io/knative-releases/knative.dev/net-istio/cmd/webhook@sha256:e7e95828c6902be7578ab2144aca0ae477515278a1e8c7644dcae4bc3ab075fd
+
+FROM gcr.io/knative-releases/knative.dev/serving/cmd/activator@sha256:a9499a7a231d42bc2307daa983a64cf9138cd9e530a043ca693a80234e794d2d
+
+FROM gcr.io/knative-releases/knative.dev/serving/cmd/autoscaler@sha256:4bf69cbb5837422833c89bf4fe9d8224b1f926c095c61171655d2b3dfc2eba39
+
+FROM gcr.io/knative-releases/knative.dev/serving/cmd/controller@sha256:b1cae7f2e60c7ee560c52bad804904c05223cdc9bd97e36ca3897e72eb3f4b4b
+
+FROM gcr.io/knative-releases/knative.dev/serving/cmd/default-domain@sha256:dee3b5b939af8ac5bbc18de498814c67bde7bf9168cc2080b915d48fc62853c2
+
+FROM gcr.io/knative-releases/knative.dev/serving/cmd/webhook@sha256:a276669c3ec2ee82f9399c6e0cc1b1923a16e7341e8973b10eee6a83d9c9ba44
